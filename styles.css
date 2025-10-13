@@ -310,6 +310,18 @@ body {
     color: #E2DEDE;
 }
 
+/* Anime Stream - Dark Background */
+.extension-card.animestream {
+    background-color: #161616;
+    color: #E2DEDE;
+}
+
+/* Binge Box - Dark Background */
+.extension-card.bingebox {
+    background-color: #161616;
+    color: #E2DEDE;
+}
+
 /* AI Art Generator - Green Background */
 .extension-card.aiart {
     background-color: #04DC77;
@@ -394,7 +406,6 @@ body {
     margin: 10px auto;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
@@ -514,7 +525,6 @@ body {
 .carousel-thumbnail.active {
     opacity: 1;
     border-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Extension Name Badge */

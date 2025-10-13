@@ -31,60 +31,49 @@ class PremiumAppV2 {
         });
     }
 
-    loadExtensions() {
-        // Original extension data with exact colors and full layout
-        this.extensions = [
-            {
-                id: "azanime",
-                name: "A-Z Anime",
-                description: "Simple anime extension app with both Sub & Dub anime. Watch shows for free with in-built video player and other features coming soon.",
-                logo: "img/Untitled.webp",
-                screenshots: [
-                    "img/thumb1%20Large.webp",
-                    "img/thumb2%20Large.webp",
-                    "img/thumb3%20Large.webp",
-                    "img/thumb4%20Large.webp",
-                    "img/thumb5%20Large.webp"
-                ],
-                category: "anime",
-                hasCarousel: true
-            },
-            {
-                id: "aiart",
-                name: "AI Art Generator",
-                description: "Free online AI image generator from text",
-                logo: "img/dea9a36c-4228-48ba-ae70-3ab6fa30b323-0%20Small.webp",
-                screenshots: [
-                    "img/image%20Medium.webp"
-                ],
-                category: "ai",
-                hasCarousel: true
-            },
-            {
-                id: "relaxme",
-                name: "Relaxing Background Music",
-                description: "A simple relaxing music and noise generator",
-                logo: "img/dc7b3f97-82ee-4bd6-a1c9-46af471e4736-0%20Small.webp",
-                screenshots: [
-                    "img/ios-11-aura-silver-granite-apple-ipad-pro-stock-3840x2160-749%20Medium.webp"
-                ],
-                category: "entertainment",
-                hasCarousel: true
-            },
-            {
-                id: "autocorrect",
-                name: "Text Auto-Correct",
-                description: "A simple tool designed to find spelling, as well as basic grammar and stylistic mistakes, in English texts.",
-                logo: "img/Untitled%20Small.webp",
-                screenshots: [
-                    "img/dac90ed58e891dfa416cd1298f09159c.webp"
-                ],
-                category: "productivity",
-                hasCarousel: true
-            }
-        ];
+    async loadExtensions() {
+        try {
+            // Fetch extensions.json directly
+            const response = await fetch('extensions.json');
 
-        this.renderExtensions();
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // Filter enabled extensions and use URLs directly
+            this.extensions = data.extensions
+                .filter(ext => ext.enabled !== false) // Only include enabled extensions
+                .map(ext => ({
+                    id: ext.id,
+                    name: ext.name,
+                    description: ext.description,
+                    logo: ext.logo,
+                    screenshots: ext.screenshots || [],
+                    category: ext.category,
+                    hasCarousel: ext.screenshots && ext.screenshots.length > 0,
+                    enabled: ext.enabled
+                }));
+
+            this.renderExtensions();
+        } catch (error) {
+            console.error('Error loading extensions:', error);
+            // Show error message to user
+            const grid = document.getElementById('extensions-grid');
+            if (grid) {
+                grid.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <h3>Unable to load extensions</h3>
+                        <p>Please make sure you're viewing this page via a web server.</p>
+                        <p style="font-size: 14px; margin-top: 20px;">
+                            If opening locally, run: <code>python3 -m http.server 8000</code><br>
+                            Then visit: <code>http://localhost:8000/3rdpartyextensions.html</code>
+                        </p>
+                    </div>
+                `;
+            }
+        }
     }
 
     handleCategoryClick(e) {
@@ -107,7 +96,13 @@ class PremiumAppV2 {
 
         const filteredExtensions = this.currentFilter === 'all'
             ? this.extensions
-            : this.extensions.filter(ext => ext.category === this.currentFilter);
+            : this.extensions.filter(ext => {
+                // Support both string and array categories
+                if (Array.isArray(ext.category)) {
+                    return ext.category.includes(this.currentFilter);
+                }
+                return ext.category === this.currentFilter;
+            });
 
         grid.innerHTML = '';
 

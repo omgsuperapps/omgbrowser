@@ -16,7 +16,6 @@
       "name": "A-Z Anime",
       "description": "Simple anime extension app with both Sub & Dub anime. Watch shows for free with in-built video player and other features coming soon.",
       "logo": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/Untitled.jpg",
-      "poster": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/image%20Medium.jpeg",
       "screenshots": [
         "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/thumb1%20Large.jpeg",
         "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/thumb2%20Large.jpeg",
@@ -24,50 +23,90 @@
         "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/thumb4%20Large.jpeg",
         "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/thumb5%20Large.jpeg"
       ],
-      "category": "anime",
+      "category": "Anime",
       "bgColor": "#161616",
-      "textColor": "#E2DEDE", 
+      "textColor": "#E2DEDE",
       "hasCarousel": true,
-      "downloadUrl": "#"
+      "downloadUrl": "#",
+      "enabled": false
+    },
+    {
+      "id": "animestream",
+      "name": "Anime Stream",
+      "description": "Simple anime extension app with both Sub & Dub anime. Watch shows for free with in-built video player and other features coming soon.",
+      "logo": "https://i.postimg.cc/VNQ9stP9/logo-Small.webp",
+      "screenshots": [
+        "https://i.postimg.cc/XvSKN56H/sc1.webp",
+        "https://i.postimg.cc/CKTCM8pv/sc2.webp",
+        "https://i.postimg.cc/JhV37XCP/sc3.webp"
+      ],
+      "category": "Anime",
+      "bgColor": "#181818",
+      "textColor": "#E2DEDE",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
+    {
+      "id": "bingebox",
+      "name": "Binge Box",
+      "description": "Browse movies and TV shows instantly.",
+      "logo": "https://i.postimg.cc/4yHLF9Cb/movhub-Small.webp",
+      "screenshots": [
+        "https://i.postimg.cc/90w8N73b/sc1.webp",
+        "https://i.postimg.cc/hvQy3dFr/sc2.webp"
+      ],
+      "category": ["Movies & TV"],
+      "bgColor": "#000000",
+      "textColor": "#E2DEDE",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
     },
     {
       "id": "aiart",
       "name": "AI Art Generator",
       "description": "Free online AI image generator from text",
-      "logo": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/dea9a36c-4228-48ba-ae70-3ab6fa30b323-0%20Small.jpeg",
-      "poster": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/image%20Medium.jpeg",
-      "screenshots": [],
-      "category": "ai",
+      "logo": "https://i.postimg.cc/d1bc5v7k/dea9a36c-4228-48ba-ae70-3ab6fa30b323-0-Small.webp",
+      "screenshots": [
+        "https://i.postimg.cc/qRPH10ty/image-Medium.webp"
+      ],
+      "category": "AI",
       "bgColor": "#04DC77",
       "textColor": "#1C1D1D",
-      "hasCarousel": false,
-      "downloadUrl": "#"
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
     },
     {
       "id": "relaxme",
       "name": "Relaxing Background Music",
       "description": "A simple relaxing music and noise generator",
-      "logo": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/dc7b3f97-82ee-4bd6-a1c9-46af471e4736-0%20Small.jpeg",
-      "poster": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/ios-11-aura-silver-granite-apple-ipad-pro-stock-3840x2160-749%20Medium.jpeg",
-      "screenshots": [],
-      "category": "entertainment",
+      "logo": "https://i.postimg.cc/k5MJSn8f/dc7b3f97-82ee-4bd6-a1c9-46af471e4736-0-Small.webp",
+      "screenshots": [
+        "https://i.postimg.cc/HLSp4f43/ios-11-aura-silver-granite-apple-ipad-pro-stock-3840x2160-749-Medium.webp"
+      ],
+      "category": "Music",
       "bgColor": "#4F89EF",
       "textColor": "#1C1D1D",
-      "hasCarousel": false,
-      "downloadUrl": "#"
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
     },
     {
       "id": "autocorrect",
       "name": "Text Auto-Correct",
       "description": "A simple tool designed to find spelling, as well as basic grammar and stylistic mistakes, in English texts.",
-      "logo": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/Untitled%20Small.jpeg",
-      "poster": "https://raw.githubusercontent.com/username/repo/main/Oldwebsite/img/dac90ed58e891dfa416cd1298f09159c.jpg",
-      "screenshots": [],
-      "category": "web",
+      "logo": "https://i.postimg.cc/W47VpxHb/Untitled-Small.webp",
+      "screenshots": [
+        "https://i.postimg.cc/26cfhhYg/dac90ed58e891dfa416cd1298f09159c.webp"
+      ],
+      "category": "Productivity",
       "bgColor": "#F2DD2F",
       "textColor": "#1C1D1D",
-      "hasCarousel": false,
-      "downloadUrl": "#"
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
     }
   ]
 }
