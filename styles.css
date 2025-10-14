@@ -304,41 +304,7 @@ body {
     padding-top: 8px;
 }
 
-/* A-Z Anime - Dark Background */
-.extension-card.azanime {
-    background-color: #161616;
-    color: #E2DEDE;
-}
-
-/* Anime Stream - Dark Background */
-.extension-card.animestream {
-    background-color: #161616;
-    color: #E2DEDE;
-}
-
-/* Binge Box - Dark Background */
-.extension-card.bingebox {
-    background-color: #161616;
-    color: #E2DEDE;
-}
-
-/* AI Art Generator - Green Background */
-.extension-card.aiart {
-    background-color: #04DC77;
-    color: #1C1D1D;
-}
-
-/* Relaxing Music - Blue Background */
-.extension-card.relaxme {
-    background-color: #4F89EF;
-    color: #1C1D1D;
-}
-
-/* Text Auto-Correct - Yellow Background */
-.extension-card.autocorrect {
-    background-color: #F2DD2F;
-    color: #1C1D1D;
-}
+/* Extension card colors are now dynamically applied from extensions.json via JavaScript */
 
 /* Extension Logo */
 .extension-logo {
@@ -394,11 +360,7 @@ body {
     top: 0;
 }
 
-.extension-card.aiart .divider-line::after,
-.extension-card.relaxme .divider-line::after,
-.extension-card.autocorrect .divider-line::after {
-    border-top-color: rgba(0, 0, 0, 0.3);
-}
+/* Divider color is now dynamically applied from extensions.json via JavaScript */
 
 /* Bootstrap Carousel - Original Style */
 .original-carousel {

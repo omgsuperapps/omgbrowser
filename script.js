@@ -53,7 +53,9 @@ class PremiumAppV2 {
                     screenshots: ext.screenshots || [],
                     category: ext.category,
                     hasCarousel: ext.screenshots && ext.screenshots.length > 0,
-                    enabled: ext.enabled
+                    enabled: ext.enabled,
+                    bgColor: ext.bgColor,
+                    textColor: ext.textColor
                 }));
 
             this.renderExtensions();
@@ -145,6 +147,30 @@ class PremiumAppV2 {
                 </div>
             </div>
         `;
+
+        // Apply custom colors from JSON data with !important to override CSS
+        if (extension.bgColor) {
+            card.style.setProperty('background-color', extension.bgColor, 'important');
+        }
+        if (extension.textColor) {
+            card.style.setProperty('color', extension.textColor, 'important');
+            // Also apply text color to title and description
+            const title = card.querySelector('.extension-title');
+            const description = card.querySelector('.extension-description');
+            const dividerLine = card.querySelector('.divider-line');
+
+            if (title) title.style.setProperty('color', extension.textColor, 'important');
+            if (description) description.style.setProperty('color', extension.textColor, 'important');
+
+            // Determine divider color based on text color brightness
+            // If text color is light (like #E2DEDE), use light divider for dark background
+            // If text color is dark (like #1C1D1D), use dark divider for light background
+            if (dividerLine) {
+                const isDarkText = extension.textColor && extension.textColor.toLowerCase() === '#1c1d1d';
+                const dividerColor = isDarkText ? 'rgba(0, 0, 0, 0.3)' : 'rgba(255, 255, 255, 0.4)';
+                dividerLine.style.setProperty('border-top-color', dividerColor, 'important');
+            }
+        }
 
         return card;
     }

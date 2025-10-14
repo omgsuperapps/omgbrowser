@@ -47,6 +47,7 @@
       "downloadUrl": "#",
       "enabled": true
     },
+
     {
       "id": "bingebox",
       "name": "Binge Box",
@@ -59,6 +60,24 @@
       "category": ["Movies & TV"],
       "bgColor": "#000000",
       "textColor": "#E2DEDE",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
+
+        {
+      "id": "masti",
+      "name": "Masti",
+      "description": "Watch free Ullu, Xprime, Primeshots, HotX, Uncut, etc and other 18+ web series",
+      "logo": "https://i.postimg.cc/0QMrqrXN/uncutmaza.webp",
+      "screenshots": [
+        "https://i.postimg.cc/ZKFtdLBQ/sc1.webp",
+        "https://i.postimg.cc/CLHTq4B9/sc2.webp",
+        "https://i.postimg.cc/tCtQxzZL/sc3.webp"
+      ],
+      "category": "18+",
+      "bgColor": "#FFFFFFFF",
+      "textColor": "#000000FF",
       "hasCarousel": true,
       "downloadUrl": "#",
       "enabled": true
