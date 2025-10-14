@@ -82,6 +82,41 @@
       "downloadUrl": "#",
       "enabled": true
     },
+
+       {
+      "id": "carrace",
+      "name": "Car Race",
+      "description": "Experience the thrill of high-speed car racing",
+      "logo": "https://i.postimg.cc/qMWwFFRn/logo.webp",
+      "screenshots": [
+        "https://i.postimg.cc/CxGvqVCR/sc1.webp",
+        "https://i.postimg.cc/wjXWmd5h/sc3.webp"
+      ],
+      "category": "Games",
+      "bgColor": "#FFA8A8FF",
+      "textColor": "#000000FF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
+          {
+      "id": "toohot",
+      "name": "Too Hot",
+      "description": "Watch the best adult websites from Ullu, ALT, Atrangi, Flix and other premium 18+ shows",
+      "logo": "https://i.postimg.cc/8CTMyZsb/pic.webp",
+      "screenshots": [
+        "https://i.postimg.cc/HL35Fb76/sc3.webp",
+        "https://i.postimg.cc/BvNDR21p/x1.webp",
+        "https://i.postimg.cc/3w9pz2D9/x2.webp"
+      ],
+      "category": "18+",
+      "bgColor": "#fdb509",
+      "textColor": "#000000FF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
+    
     {
       "id": "aiart",
       "name": "AI Art Generator",
