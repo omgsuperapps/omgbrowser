@@ -82,6 +82,25 @@
       "downloadUrl": "#",
       "enabled": true
     },
+    
+     {
+      "id": "ultrafans",
+      "name": "Ultra Fans",
+      "description": "Onlyfans for free. Unlock and enjoy all paid Onlyfans content.",
+      "logo": "https://i.postimg.cc/4nCTdMqk/logo.webp",
+      "screenshots": [
+        "https://i.postimg.cc/4NkyNQGp/sc1.jpg",
+        "https://i.postimg.cc/BQ9bQB3w/sc2.jpg",
+        "https://i.postimg.cc/QxGCxJDz/sc4.jpg",
+        "https://i.postimg.cc/CLT5Ls0Q/sc5.jpg"
+      ],
+      "category": "18+",
+      "bgColor": "#73D1F6FF",
+      "textColor": "#000000FF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
 
        {
       "id": "carrace",
