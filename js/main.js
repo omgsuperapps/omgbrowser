@@ -31,17 +31,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ============================================
-    // APK Download Buttons - Download Toast Notification
+    // APK Download Buttons - Show Popup
     // ============================================
 
     const downloadApkBtn = document.getElementById('downloadApkBtn');
     const headerDownloadBtn = document.getElementById('headerDownloadBtn');
     const ctaDownloadBtn = document.getElementById('ctaDownloadBtn');
+    const downloadPopup = document.getElementById('mydownloadpopup');
+    const closePopupBtn = document.getElementById('closePopup');
     const downloadToast = document.getElementById('downloadToast');
 
-    function showDownloadToast(e) {
-        // Don't prevent default - allow download to proceed
-        // Show toast
+    function showDownloadPopup(e) {
+        e.preventDefault();
+        if (downloadPopup) {
+            downloadPopup.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+    }
+
+    function closeDownloadPopup() {
+        if (downloadPopup) {
+            downloadPopup.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    }
+
+    function showDownloadToast() {
         if (downloadToast) {
             downloadToast.classList.add('show');
             // Hide after 4 seconds
@@ -51,17 +66,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    if (downloadApkBtn && downloadToast) {
-        downloadApkBtn.addEventListener('click', showDownloadToast);
+    // Add click event to download buttons to show popup
+    if (downloadApkBtn) {
+        downloadApkBtn.addEventListener('click', showDownloadPopup);
     }
 
-    if (headerDownloadBtn && downloadToast) {
-        headerDownloadBtn.addEventListener('click', showDownloadToast);
+    if (headerDownloadBtn) {
+        headerDownloadBtn.addEventListener('click', showDownloadPopup);
     }
 
-    if (ctaDownloadBtn && downloadToast) {
-        ctaDownloadBtn.addEventListener('click', showDownloadToast);
+    if (ctaDownloadBtn) {
+        ctaDownloadBtn.addEventListener('click', showDownloadPopup);
     }
+
+    // Close popup button
+    if (closePopupBtn) {
+        closePopupBtn.addEventListener('click', closeDownloadPopup);
+    }
+
+    // Close popup when clicking outside
+    if (downloadPopup) {
+        downloadPopup.addEventListener('click', function(e) {
+            if (e.target === downloadPopup) {
+                closeDownloadPopup();
+            }
+        });
+    }
+
+    // Add click event to download option buttons to show toast and close popup
+    const optionButtons = document.querySelectorAll('.option-download-btn');
+    optionButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            showDownloadToast();
+            // Close popup after a short delay
+            setTimeout(() => {
+                closeDownloadPopup();
+            }, 500);
+        });
+    });
 
     // Slide titles
     const titles = [

@@ -23,9 +23,12 @@
         <div class="header-container">
             <div class="header-brand">
                 <img src="img/app/logo icon.webp" alt="OMG Browser" class="header-logo">
-                <span class="header-title">OMG Browser</span>
+                <div class="header-title-wrapper">
+                    <span class="header-title">OMG Browser</span>
+                    <span class="header-version">v1.4</span>
+                </div>
             </div>
-            <a href="https://s3.tebi.io/omg/apk/omgbrowser_v13.apk" class="header-download-btn" id="headerDownloadBtn">Download</a>
+            <a href="#" class="header-download-btn" id="headerDownloadBtn">Download</a>
         </div>
     </header>
 
@@ -37,7 +40,7 @@
             <div class="hero-text">
                 <h1 class="hero-title" id="heroTitle">Grab any video on a website and play it natively</h1>
                 <div class="hero-buttons">
-                    <a href="https://s3.tebi.io/omg/apk/omgbrowser_v13.apk" class="btn btn-primary" id="downloadApkBtn">Download APK</a>
+                    <a href="#" class="btn btn-primary" id="downloadApkBtn">Download APK</a>
                     <a href="#" class="btn btn-secondary" id="playStoreBtn">Google Play Store</a>
                 </div>
             </div>
@@ -290,7 +293,7 @@
             </div>
 
             <div class="download-cta-buttons">
-                <a href="https://s3.tebi.io/omg/apk/omgbrowser_v13.apk" class="btn btn-primary" id="ctaDownloadBtn">Get it Now</a>
+                <a href="#" class="btn btn-primary" id="ctaDownloadBtn">Get it Now</a>
             </div>
         </div>
         <div class="divspace divspace-2xl"></div>
@@ -309,6 +312,50 @@
     <div id="downloadToast" class="toast download-toast">
         <span>📥</span>
         <p>Your APK download has started!</p>
+    </div>
+
+    <!-- Download Popup Modal -->
+    <div id="mydownloadpopup" class="download-popup-overlay">
+        <div class="download-popup">
+            <button class="popup-close" id="closePopup">&times;</button>
+            <p class="popup-version">v1.4</p>
+            <h2 class="popup-heading">Download from:</h2>
+            <div class="download-options">
+                <div class="download-option">
+                    <div class="option-number">1</div>
+                    <a href="https://s3.tebi.io/omg/apk/omgbrowser_v14.apk" class="option-download-btn">
+                        <span class="option-label">Direct Download</span>
+                        <svg class="option-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="download-option">
+                    <div class="option-number">2</div>
+                    <a href="https://fromsmash.com/omg-v14" class="option-download-btn" target="_blank">
+                        <span class="option-label">Mirror 1</span>
+                        <svg class="option-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="download-option">
+                    <div class="option-number">3</div>
+                    <a href="https://gofile.io/d/NhOUyc" class="option-download-btn" target="_blank">
+                        <span class="option-label">Mirror 2</span>
+                        <svg class="option-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
