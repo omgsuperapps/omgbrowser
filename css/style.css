@@ -2428,11 +2428,44 @@ body {
     transform: translateY(-1px) scale(1.01);
 }
 
+.option-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .option-label {
     font-size: 18px;
     font-weight: 700;
     color: var(--black);
     letter-spacing: 0.3px;
+}
+
+.speed-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 7px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.speed-normal {
+    display: none;
+}
+
+.speed-faster {
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.speed-icon {
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
 }
 
 .option-icon {
@@ -2488,6 +2521,17 @@ body {
         font-size: 17px;
     }
 
+    .speed-tag {
+        font-size: 9px;
+        padding: 2px 6px;
+        gap: 2px;
+    }
+
+    .speed-icon {
+        width: 9px;
+        height: 9px;
+    }
+
     .option-icon {
         width: 20px;
         height: 20px;
@@ -2538,6 +2582,17 @@ body {
 
     .option-label {
         font-size: 16px;
+    }
+
+    .speed-tag {
+        font-size: 8px;
+        padding: 2px 5px;
+        gap: 2px;
+    }
+
+    .speed-icon {
+        width: 8px;
+        height: 8px;
     }
 
     .option-icon {

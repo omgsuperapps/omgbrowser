@@ -34,11 +34,11 @@
       "id": "animestream",
       "name": "Anime Stream",
       "description": "Simple anime extension app with both Sub & Dub anime. Watch shows for free with in-built video player and other features coming soon.",
-      "logo": "https://i.postimg.cc/VNQ9stP9/logo-Small.webp",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/anigo/logo%20Small.webp",
       "screenshots": [
-        "https://i.postimg.cc/XvSKN56H/sc1.webp",
-        "https://i.postimg.cc/CKTCM8pv/sc2.webp",
-        "https://i.postimg.cc/JhV37XCP/sc3.webp"
+        "https://s3.tebi.io/omg/ext/imgs/anigo/sc3.webp",
+        "https://s3.tebi.io/omg/ext/imgs/anigo/sc2.webp",
+        "https://s3.tebi.io/omg/ext/imgs/anigo/sc1.webp"
       ],
       "category": "Anime",
       "bgColor": "#181818",
@@ -87,10 +87,10 @@
       "id": "carrace",
       "name": "Car Race",
       "description": "Experience the thrill of high-speed car racing",
-      "logo": "https://i.postimg.cc/qMWwFFRn/logo.webp",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/carrace/logo.webp",
       "screenshots": [
-        "https://i.postimg.cc/CxGvqVCR/sc1.webp",
-        "https://i.postimg.cc/wjXWmd5h/sc3.webp"
+        "https://s3.tebi.io/omg/ext/imgs/carrace/sc3.webp",
+        "https://s3.tebi.io/omg/ext/imgs/carrace/sc1.webp"
       ],
       "category": "Games",
       "bgColor": "#FFA8A8FF",
@@ -117,6 +117,25 @@
       "enabled": true
     },
     
+          {
+      "id": "ultrafans",
+      "name": "Ultra Fans",
+      "description": "Onlyfans for free",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/ultrafans/logo.webp",
+      "screenshots": [
+        "https://i.postimg.cc/v82F8cCz/sc1.jpg",
+        "https://i.postimg.cc/gctFcn1M/sc2.jpg",
+        "https://i.postimg.cc/Y2DK2hTn/sc4.jpg",
+        "https://i.postimg.cc/J7YV7GSd/sc5.jpg"
+      ],
+      "category": "18+",
+      "bgColor": "#21C9F8FF",
+      "textColor": "#000000FF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
+    
     {
       "id": "aiart",
       "name": "AI Art Generator",
@@ -136,9 +155,9 @@
       "id": "relaxme",
       "name": "Relaxing Background Music",
       "description": "A simple relaxing music and noise generator",
-      "logo": "https://i.postimg.cc/k5MJSn8f/dc7b3f97-82ee-4bd6-a1c9-46af471e4736-0-Small.webp",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/relaxme/dc7b3f97-82ee-4bd6-a1c9-46af471e4736-0%20Small.webp",
       "screenshots": [
-        "https://i.postimg.cc/HLSp4f43/ios-11-aura-silver-granite-apple-ipad-pro-stock-3840x2160-749-Medium.webp"
+        "https://s3.tebi.io/omg/ext/imgs/relaxme/ios-11-aura-silver-granite-apple-ipad-pro-stock-3840x2160-749%20Medium.webp"
       ],
       "category": "Music",
       "bgColor": "#4F89EF",
@@ -151,9 +170,9 @@
       "id": "autocorrect",
       "name": "Text Auto-Correct",
       "description": "A simple tool designed to find spelling, as well as basic grammar and stylistic mistakes, in English texts.",
-      "logo": "https://i.postimg.cc/W47VpxHb/Untitled-Small.webp",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/autocorrect/Untitled%20Small.webp",
       "screenshots": [
-        "https://i.postimg.cc/26cfhhYg/dac90ed58e891dfa416cd1298f09159c.webp"
+        "https://s3.tebi.io/omg/ext/imgs/autocorrect/dac90ed58e891dfa416cd1298f09159c.webp"
       ],
       "category": "Productivity",
       "bgColor": "#F2DD2F",
