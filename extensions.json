@@ -149,7 +149,7 @@
       "textColor": "#1C1D1D",
       "hasCarousel": true,
       "downloadUrl": "#",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "relaxme",
@@ -164,7 +164,7 @@
       "textColor": "#1C1D1D",
       "hasCarousel": true,
       "downloadUrl": "#",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "autocorrect",
@@ -179,7 +179,7 @@
       "textColor": "#1C1D1D",
       "hasCarousel": true,
       "downloadUrl": "#",
-      "enabled": true
+      "enabled": false
     }
   ]
 }
