@@ -135,6 +135,26 @@
       "downloadUrl": "#",
       "enabled": true
     },
+
+      {
+      "id": "mastipro",
+      "name": "Masti Pro",
+      "description": "Watch free paid OTT + Exlusive app contents",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/mastipro/icon.webp",
+      "screenshots": [
+        "https://i.postimg.cc/qMvJgTvH/u1.webp",
+        "https://i.postimg.cc/sDgj1rg2/u2.webp",
+        "https://i.postimg.cc/Wb1Ntv11/u3.webp",
+        "https://i.postimg.cc/02ykrsy5/u4.webp",
+        "https://i.postimg.cc/TY3dh63T/u6.webp"
+      ],
+      "category": "18+",
+      "bgColor": "#FF4935FF",
+      "textColor": "#FFFFFFFF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
     
     {
       "id": "aiart",
