@@ -155,6 +155,24 @@
       "downloadUrl": "#",
       "enabled": true
     },
+
+
+      {
+      "id": "pakistars",
+      "name": "Paki Stars",
+      "description": "Pakistani and Urdu Leaks",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/pakistars/exticon.webp",
+      "screenshots": [
+        "https://i.postimg.cc/fbBSrL0X/u1.webp",
+        "https://i.postimg.cc/TPC54wWW/u2.webp"
+      ],
+      "category": "18+",
+      "bgColor": "#212121FF",
+      "textColor": "#FFFFFFFF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
     
     {
       "id": "aiart",
