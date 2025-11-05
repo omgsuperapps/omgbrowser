@@ -158,6 +158,25 @@
 
 
       {
+      "id": "hentaiking",
+      "name": "Hentai King",
+      "description": "Watch thousands of hentai videos. New uploads every day",
+      "logo": "https://s3.tebi.io/omg/ext/imgs/hentaiking/exticon.webp",
+      "screenshots": [
+        "https://i.postimg.cc/qRPC9pHy/sc2.webp",
+        "https://i.postimg.cc/1XDNSbyc/sc3.webp",
+        "https://i.postimg.cc/sf5BMdRN/sc1.webp"
+      ],
+      "category": "18+",
+      "bgColor": "#ffa5bd",
+      "textColor": "#000000FF",
+      "hasCarousel": true,
+      "downloadUrl": "#",
+      "enabled": true
+    },
+
+
+      {
       "id": "pakistars",
       "name": "Paki Stars",
       "description": "Pakistani and Urdu Leaks",
